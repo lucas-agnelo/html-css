@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h1 {
+            padding: 10px;
+            border: 10px solid white;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            outline: 3px solid red;
+            margin: 20px auto 80px auto;
+        }
+        a {
+            border-width: 1px;
+            border-color: blueviolet;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>A tag h1 é um exemplo de box-level</h1>
+    <p>Parágrafos também são box-level, no entanto, <a href="#">esse link é inline-level</a>.</p>
+    <hr>
+    <h2>Anotações</h1>
+    <p>Centralizar com <code>margin: auto;</code></p>
+    <p>Com notação clockwise, utilizar <code>margin: 20px auto 20px auto;</code></p>
+    <p>A ordem do border e do outline é <code>border: width style color;</code></p>
+    <p>Podemos utilizar os seguintes displays:</p>
+    <p><pre><code>  display: block;</code></pre> (box-level)</p>
+    <p><pre><code>  display: inline;</code></pre> (inline-level)</p>
+    <p><pre><code>  display: inline-block;</code></pre> (inline-level com características block)</p>
+</body>
+</html>

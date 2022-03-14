@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a7d1f8;
+}
+
+#principal {
+    background-color: #69a6df;
+    padding: 5px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    color: #072e53;
+}
+
+h2 {
+    color: rgb(83, 4, 4);
+}
+
+p {
+    text-align: justify;
+}
+
+.destaque1 {
+    background-color: #f7cc42a8;
+}
+
+.destaque2 {
+    background-color: #2692f786;
+}

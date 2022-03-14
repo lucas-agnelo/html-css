@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.05em;
+        }
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi at doloribus, accusantium quaerat rem id natus? Quas accusantium accusamus possimus cupiditate aperiam earum suscipit consectetur alias voluptate, et delectus quasi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ad blanditiis ratione iusto magnam quidem aliquid, consectetur aperiam illum reprehenderit error. Reprehenderit qui debitis sequi esse, laudantium magnam ipsa dicta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, excepturi iusto? Aut adipisci fuga nam. Porro culpa adipisci totam eveniet debitis? Ab aliquid consequuntur, praesentium rem debitis laborum ipsa suscipit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste velit iure quia nesciunt eveniet, dolorem reiciendis, impedit fugiat voluptates molestiae laborum est, repellendus sint alias. Voluptas debitis asperiores delectus repellat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus in quia iusto beatae consectetur mollitia maiores facilis? Fugiat nulla, quia nemo minima a pariatur hic, deleniti unde quas dicta cum!</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas, officiis deleniti in soluta dolores facilis eligendi assumenda porro cum molestias dolor iusto quo, omnis repudiandae nobis suscipit aliquid nostrum!</p>
+    <hr>
+    <h1>Anotações</h1>
+    <p>Quando quiser estilizar mais de uma classe ao mesmo tempo, utilizar:</p>
+    <pre><code>
+        h1, h1 {
+            font-family: declarações;
+        }
+    </code></pre>
+    <p>O W3C recomenda o uso de px como tamanho absoluto de fonte, e de em como tamnha relativo de fonte.</p>
+    <p>1em geralmente é igual a 16px, e é relativo ao tamanho das letras maiúsculas da fonte.</p>
+    <h2>Configuração de Fonte</h2>
+    <p>Nem todas as fontes possuem todas essas propriedades, mas essas são as configurações comuns.</p>
+    <pre><code>
+        font-style: italic;
+        font-weight: lighter / normal / bold / bolder ou 100-900;
+        font-size: 16px ou 1em;
+        font-family: Arial, sans-serif;
+    </code></pre>
+    <h2>Shorthand para configuração de fonte</h2>
+    <code>font: style weight size family;</code>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgrey;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover {
+            background-color: blueviolet;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        01
+        <p>Eu...</p>
+    </div>
+    <div>
+        02
+        <p>...consegui...</p>
+    </div>
+    <div>
+        03
+        <p>...fazer isso!</p>
+    </div>
+    <hr>
+    <h1>Anotações</h1>
+    <p>Quando queremos mecher em um elemento filho de outro, isso é, aninhado dentro do outro, nós utilizamos o sinal de &lt;, como no exemplo abaixo em que queremos configurar um &lt;p&gt; que esta dentro de uma &lt;div&gt;:</p>
+    <pre><code>
+        div > p {
+            declarações...
+        }
+    </code></pre>
+    <p>Usei para criar três parágrafos escondidos em cada div, usando também a pseudo-classe :hover - Exemplo do cógigo abaixo:</p>
+    <pre><code>
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: #000;
+            color: white;
+        }
+    </code></pre>
+</body>
+</html>

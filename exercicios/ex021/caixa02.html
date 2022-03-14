@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #181818;
+            padding: 10px;
+            box-shadow: 0px 4px 7px #0000008a;
+        }
+
+        nav {
+            background-color: #181818;
+            padding: 3px;
+            text-align: center;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #b40000;
+            margin-right: 25px;
+            margin-left: 5px;
+            font-weight: bolder;
+        }
+
+        nav > a:hover {
+            color: #ee0000;
+        }
+
+        h1 {
+            margin: 8px 8px 8px 0px;
+            color: #b40000;
+            font-size: 2.5em;
+            font-family: 'New Rocker', cursive;
+            text-shadow: 0px 0px 1.7px #ffffff62;
+            text-align: center;
+        }
+
+        main {
+            padding: 0px 18px;
+        }
+
+        article {
+            padding: 18px;
+            margin-top: 32px;
+            margin-left: 25px;
+            margin-bottom: 31px;
+            margin-right: 25px;
+            box-shadow: 2px 2px 7px #00000085;
+            border-radius: 10px;
+        }
+
+        article > h2 {
+            color: #b40000;
+            font-size: 1.8em;
+        }
+
+        article > p {
+            text-align: justify;
+        }
+
+        aside {
+            background-color: #181818;
+            padding: 18px;
+            margin: 32px 25px 31px 25px;
+            border: 30px solid #b40000;
+            border-image: url('borda.png') 34% round;
+            color: white;
+        }
+
+        h2 {
+            margin: 8px 8px 8px 0px;
+        }
+
+        footer {
+            background-color: #181818;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+            text-align: center;
+            color: white;
+        }
+
+        #criador {
+            text-decoration: none;
+            color: #b40000;
+            font-weight: bolder;
+        }
+
+        #criador:hover {
+            color: #ee0000;
+        }
+
+        #heart {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rock'n Roll Café</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="artigos">
+            <article>
+                <h2>Artigo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veniam commodi mollitia distinctio! Dignissimos illo excepturi architecto nulla consequatur. Facilis modi ipsam iure placeat ab laboriosam unde culpa repudiandae accusantium?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio officia ratione odio aut consequatur voluptates, laboriosam aspernatur dolores molestiae aliquam aliquid quidem minus deleniti rem, doloribus facere. Magni, quo atque?</p>
+            </article>
+            <article>
+                <h2>Artigo 2</h2>
+                <h3>Subtítulo Artigo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus optio reprehenderit repellendus sint eaque officiis ea officia sequi, veniam laudantium illo a labore! Nulla a commodi inventore delectus sequi?</p>
+                <h3>Outro Subtítulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit doloribus modi eligendi esse tenetur. Impedit dolorem fuga quisquam aperiam, quae amet culpa! Ab amet aspernatur tempore fuga, molestias eum corrupti.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta pariatur quaerat, amet molestias dolores, ratione, dolorem consequatur repudiandae assumenda commodi voluptatibus laboriosam impedit iste! Voluptates culpa ratione veritatis provident consequuntur!</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Anotações da Aula</h2>
+            <p>Para criar uma borda personalizada com imagens, você pode utilizar o <pre><code>    border: ;
+    border-image-source: url();
+    border-image-slice: ;
+    border-image-repeat: ;</code></pre>Ou ainda o shorthand: <code>border-image: url('') slice repeat;</code></p>
+            <p>O ideal é fazer uma imagem exata, com cortes no local correto, no exemplo dessa aula em 33%.</p>
+        </aside>
+    </main>
+    <footer><p>Criado com <span id="heart">&#10084;</span> por <a href="https://www.instagram.com/1lucas.agnelo/" rel="external" target="_blank" id="criador">Lucas Agnelo</a></p></footer>
+</body>
+</html>

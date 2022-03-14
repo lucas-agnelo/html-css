@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Trabalhando com Links</h1>
+    <p>Links são escritos da seguinte forma:</p>
+    <code>&lt;a href="ulr"&gt;Texto do link&lt;/a&gt;</code>
+    <h2>Links Externos</h2>
+    <p>Para criar links externos, ou seja, que direcionam para fora do seu site, deve-se utilisar os parâmetros <code>target="_blank"</code> para abrir em outra aba e <code>rel="external"</code> para alertar mecanismos de busca que é um link externo. Por Exemplo:</p>
+    <p>Esse é um link para o <a href="https://www.google.com.br/" target="_blank" rel="external">Google</a>.</p>
+    <p>Esse é um link para o <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">Repositório do Curso</a>.</p>
+    <h2>Links Internos</h2>
+    <p>Links internos direcionam para páginas dentro do mesmo servidor, e NÃO DEVEM utilizar o parâmetro <code>target="_blank"</code>, além de ser interessante que contenham <code>rel="next"</code> ou <code>rel="prev"</code> para criar uma navegação interna que possa ser entendida pelos mecanismos de busca.</p>
+    <p>Esse é um link para a <a href="pagina02.html" rel="next">segunda página</a>.</p>
+    <p>Esse é um link para a <a href="paginas/pagina03.html" rel="next">terceira página</a>.</p>
+    <h2>Links de Download</h2>
+    <p>Para criar links de download devemos preencher o <code>href</code> com o caminho do arquivo, e adicionar os parâmetros <code>download="nome-do-arquivo.ext"</code> e <code>type="application/tipo-da-aplicacao-encontrada-no-iana-org"</code></p>
+    <ul>
+        <li><a href="livro/como-escrever.pdf" download="como-escrever.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="livro/como-escrever-historias.7z" download="como-escrever-historias.7z" type="application/x-7z-compressed">Baixar livro em 7z</a></li>
+    </ul>
+    <hr>
+    <h1>Anotações da Aula</h1>
+    <p>Site para ver os types dos links/ancôras: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.org</a></p>
+</body>
+</html>
