@@ -9,6 +9,16 @@
             border-collapse: collapse;
         }
 
+        caption {
+            background-color: darkgray;
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: white;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
         thead, tfoot {
             background-color: darkgray;
             color: white;
@@ -41,12 +51,12 @@
 </head>
 <body>
     <h1>Hierarquia de Tabelas Grandes</h1>
-    <h2>População por Estado</h2>
     <table>
+        <caption>População por Estado</caption>
         <thead>
-            <th class="posicao">Posição</th>
-            <th>Estado</th>
-            <th>População</th>
+            <th class="posicao" scope="col">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 35px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -103,7 +113,7 @@
         <tfoot>
             <tr>
                 <td id="no-data"></td>
-                <th>Soma dos 10 Estados</th>
+                <th scope="row">Soma dos 10 Estados</th>
                 <td class="num"><strong>143.083.135</strong></td>
             </tr>
         </tfoot>
